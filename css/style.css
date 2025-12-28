@@ -1,0 +1,680 @@
+:root{
+    --forestGreen: #2D442B;
+    --sageGreen: #8F9677;
+    --sageGreen50:  rgba(143, 150, 119, 0.5);
+    --sunflowerYellow: #B68334;
+}
+
+body{
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
+
+/* headings */
+
+h1, h2, h3, h4 {
+    font-family: "Kannada mn";
+    font-weight: normal;
+    color: var(--forestGreen);
+    margin: 0;;
+}
+
+h1 { font-size: 3.5em; }
+
+h2 { font-size: 3em; }
+
+h3 { font-size: 2em; }
+
+h4{ font-size: 1.5em; }
+
+p { color: #000; margin: 0px; }
+
+/* navigatie */
+nav {
+    display: flex;
+    align-items: center;
+    padding: 1em 1.5em;
+    max-width: 100%;
+}
+
+/* logo navigatie - footer */
+nav a.logo, footer a.logo {
+    display: inline-block; 
+    height: 43px;
+    width: 115px;
+    background-image: url(../images/logo-dark.svg);
+    background-repeat: no-repeat;
+    background-size: 115px 43px;
+}
+
+/* hamburger menu */
+#hamburger{
+    display: none;
+}
+
+#hamburger:checked ~ .slidemenu {
+    transform: translateX(0);
+    display: block;
+}
+
+.hamburger {
+    display: inline-block;
+    position: absolute;
+    right: 1em;
+    top: 1.5em;
+    width: 20px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: var(--forestGreen);
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    left: 0;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.hamburger span:nth-child(1) {
+    top: 8px;
+}
+
+.hamburger span:nth-child(2) {
+    top: 16px;
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(1) {
+    opacity: 0;
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    top: 6px;
+
+}
+
+#hamburger:checked ~ .hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 6px;
+}
+
+/* nav menu */
+
+.slidemenu {
+    background-color: #fff;
+    transform: translateX(100%);
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    top: 4em;
+    left: 0;
+    padding-top: 1em;
+    transition: all 0.6s ease-in;
+    z-index: 999;
+}
+
+.slidemenu div a {
+    text-decoration: none;
+    text-align: center;
+    font-family: "Kannada mn";
+    font-weight: normal;
+    font-size: 2em;
+    color: var(--forestGreen);
+}
+
+.slidemenu .navLinks, .slidemenu .navButtons {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding-top: 2em;
+}
+
+.slidemenu a:hover {
+    color: var(--sunflowerYellow);
+}
+
+/* header */
+.hero, .ctaFooter, .quote, .login, .signup{
+    border-radius: 30px;
+    margin: 1em;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.5em;
+}
+
+.hero{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
+
+.heroHome{
+    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-homepage.jpg");
+}
+
+.heroAbout{
+    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-about.jpg");
+}
+
+.heroFeatures{
+    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-features.jpg");
+}
+
+.heroDownload{
+    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-downlaod.jpg");
+}
+
+.hero h1, .hero p{ color: whitesmoke; }
+
+.ctaFooter, .quote, .login, .signup{ background-color: var(--sageGreen50); }
+
+.heroButtons .btnDark{ 
+    color: whitesmoke;
+}
+
+.heroButtons .btnLight {
+    color: whitesmoke;
+    border: 2px solid whitesmoke;
+}
+
+.btnLight, .btnDark {
+    padding: 1em 2em;
+    border-radius: 40px;
+    font-weight: bold;
+    text-decoration: none; 
+    width: 125px;
+}
+
+.homeAbout .btnDark { 
+    width: 150px;
+    padding: 1em;
+}
+
+.heroFeatures .btnLight { 
+    width: 150px;
+    padding: 1em;
+}
+
+.ctaButtons .btnLight, .ctaButtons .btnDark {
+    width: 200px;
+}
+
+.btnLight {
+    background-color: transparent;
+    color: var(--forestGreen);
+    border: 2px solid var(--forestGreen);  
+}
+
+.btnDark {
+    background-color: var(--forestGreen);
+    color: whitesmoke;
+}
+
+.btnDark:hover{
+    background-color: var(--sunflowerYellow);
+}
+
+.btnLight:hover{
+    background-color: var(--sunflowerYellow);
+    border: 2px solid var(--sunflowerYellow);
+    color: whitesmoke;
+}
+
+.hero .heroButtons .btnLight:hover {
+    background-color: var(--sunflowerYellow);
+    border: 2px solid var(--sunflowerYellow);
+    color: whitesmoke;
+}
+
+header .heroButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+header .heroButtons a{
+    text-decoration: none;
+}
+
+/* sections */
+
+/* home */
+.homeAbout, .homeFeatures,
+.about, .features, .featureCard, .download, footer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 1em;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+.homeAbout .content, .homeFeatures .content, 
+.about .content, .features .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.homeAbout .content, .about .content, .about, .features .content{
+    gap: 32px;
+}
+
+.homeAbout .content a{
+    display: inline-block;
+}
+
+.homeAbout .mockup {
+    padding-top: 1em;
+    width: 80%;
+}
+
+.homeFeatures .content h3 {
+    margin-bottom: 8px;
+}
+
+.homeFeatures .content h2{
+    margin-bottom: 32px;
+}
+
+.homeFeatures{
+    gap: 1.5em;
+}
+
+.homeFeatures .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5em;
+    gap: 1em;
+}
+
+article img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* about */
+.about .imgContent {
+    height: 250px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* features */
+.featureCard {
+    border: 1px solid var(--forestGreen);
+    border-radius: 30px;
+    padding: 1em 2em;
+    height: 250px;
+    width: 300px;
+    justify-content: center;
+    gap: 1em;
+}
+
+/* download */
+.download ul li {
+    text-align: left;
+    line-height: 2em;
+}
+
+.ctaButtons{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.ctaFooter{
+    padding-bottom: 2em;
+}
+
+/* login - sign up */
+.login, .signup{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    padding: 2em;
+}
+
+.login label, .signup label {
+    color: var(--forestGreen);
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 16px;
+}
+
+.login input, .signup input, .signup select {
+    height: 56px;
+    width: 100%;
+    border-radius: 30px;
+    border: none;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.login .forgetPassword{
+    text-decoration: none;
+    color: var(--forestGreen);
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+.signup .column{
+    display: flex;
+    flex-direction: column;
+}
+
+.formButtons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.formButtons .btnDark {
+    width: 80%;
+    text-align: center;
+}
+
+.formButtons p {
+    font-weight: bold;
+}
+
+.login p, .signup p {
+    color: var(--forestGreen);
+    text-align: center;
+}
+
+input::placeholder{
+    color: var(--sageGreen);
+}
+
+/* footer */
+footer{
+    gap: 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #000;
+}
+
+footer p {
+    margin-top: 8px;
+}
+
+footer .footerLinks, footer .socialButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+footer .socialButtons a {
+    padding: 0.5em 0.4em;
+    color: whitesmoke;
+    background-color: var(--sageGreen);
+    border-radius: 5px;
+}
+
+footer .stroke {
+    width: 100%;
+    border-top: 1px solid #000;
+    margin-top: 1em;
+}
+
+.fa-solid, .fa-regular {
+    color: var(--forestGreen);
+    
+}
+
+footer .footerLinks a:hover{
+    color: var(--sunflowerYellow);
+}
+
+footer .socialButtons a:hover{
+    background-color: var(--sunflowerYellow);
+}
+
+@media (min-width: 768px) {
+    nav{
+        padding: 1em 2em;
+    }
+
+    .hamburger{
+        right: 2em;
+        top: 1.7em;
+    }
+
+    .slidemenu {
+        width: 50vw;
+        height: 100%;
+        left: 50vw;
+    }
+
+    .slidemenu div a {
+        text-align: right;
+        margin-right: 2em;
+    }
+
+    .hero, .ctaFooter, .quote, .login, .signup, footer{
+        margin: 1em 2em;
+    }
+
+    .hero p{
+        max-width: 90%;
+    }
+
+    .homeFeatures p, p{
+        max-width: 80%;
+    }
+    
+    .features .content p, footer p {
+        max-width: 100%;
+    }
+
+    .login, .signup {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .signup .column{
+        width: 100%;
+    }
+
+    .signup .row{
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .formButtons .btnDark{
+        width: 200px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    body{
+        max-width: 1400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    nav{ 
+        padding: 1em 4em;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger{ display: none; }
+
+    nav a.logo{ width: 39%; }
+
+    .slidemenu{
+        transform: none;
+        transition: none;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-self: flex-end;
+        justify-content: space-between;
+        top: 0;
+        gap: 1em;
+        padding: 0;
+        left: 0;
+        width: 61%;
+        margin: 0;
+    }
+
+    #hamburger:checked ~ .slidemenu {
+        transform: none;
+    }
+
+    .slidemenu .navLinks, .slidemenu .navButtons {
+        display: flex;
+        flex-direction: row;
+        padding-top: 0;
+    }
+
+    .slidemenu .navLinks{
+        align-self: center;
+    }
+
+    .slidemenu .navLinks .active {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .slidemenu .navButtons{
+        justify-content: flex-end;
+        gap: 0.5em;
+    }
+
+    .slidemenu .dontShow{
+        display: none;
+    }
+
+    nav .navForms{
+        justify-content: flex-end;
+    }
+
+    .slidemenu .navButtons .light, .slidemenu .navButtons .dark{
+        border: 2px solid var(--forestGreen);  
+        padding: 0.7em 1em;
+        /* padding: 0.8em 1em; */
+        border-radius: 40px;
+        text-align: center;
+        width: 60px;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: bold;
+    }
+
+    .slidemenu .navButtons .light{
+        background-color: transparent;
+        color: var(--forestGreen);
+    }
+
+    .slidemenu .navButtons .dark {
+        background-color: var(--forestGreen);
+        color: whitesmoke;
+    }
+
+    .slidemenu .navButtons .light:hover, .slidemenu .navButtons .dark:hover{
+        background-color: var(--sunflowerYellow);
+        border: 2px solid var(--sunflowerYellow);
+        color: whitesmoke;
+    }
+
+    .slidemenu div a {
+        margin: 0;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: normal;
+        font-size: 1em;
+    }
+
+    .hero, .ctaFooter, .quote, .login, .signup, footer,
+    .homeAbout, .about, .download{
+        margin: 3em 4em;
+    }
+
+    .hero{ 
+        min-height: 325px;
+    }
+
+    p{
+        max-width: 95%;
+    }
+
+    .homeAbout, .about{
+        flex-direction: row;
+    }
+
+    .philosophy {
+        flex-direction: row-reverse;
+    }
+
+    .download{
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+
+    .download .column{
+        width: 60%;
+    }
+
+    .homeAbout .content, .about .content{
+        align-items: flex-start;
+        width: 60%;
+        text-align: left;
+    }
+
+    .homeAbout .btnDark{
+        text-align: center;
+    }
+
+    .homeAbout .mockup, .download .mockup{
+        width: 70%;
+        align-self: center;
+    }
+
+    .about .imgContent {
+        width: 375px;
+        height: 275px;
+        object-fit: cover;
+    }
+
+    .features .row, .homeFeatures .row, .about .row, .philosophy .row{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about .row{
+        width: 40%;
+        justify-content: flex-end;
+    }
+
+    .philosophy .row{
+        width: 40%;
+        justify-content: flex-start;
+    }
+
+    .login, .signup {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
