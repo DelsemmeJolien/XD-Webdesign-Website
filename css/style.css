@@ -13,7 +13,7 @@ body{
 
 /* headings */
 h1, h2, h3, h4 {
-    font-family: "Kannada mn", "Noto Serif Kannada", serif;
+    font-family: "Kannada MN", "Noto Serif Kannada", serif;
     font-weight: normal;
     color: var(--forestGreen);
     margin: 0;;
@@ -501,7 +501,7 @@ footer .socialButtons a:hover{ background-color: var(--sunflowerYellow); }
         padding: 0.7em 1em;
         border-radius: 40px;
         text-align: center;
-        width: 60px;
+        width: 70px;
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-weight: bold;
     }
