@@ -35,7 +35,7 @@
 ---
 
 ## 6. Eindcontrole
-- [ ] Werkt alles in **Chrome, Firefox en Edge/Safari**?
+- [X] Werkt alles in **Chrome, Firefox en Edge/Safari**?
 
 ## 7. Uploaden
 - [X] Heb ik mijn bestanden geüpload naar **GitHub Pages**?
