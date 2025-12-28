@@ -12,7 +12,6 @@ body{
 }
 
 /* headings */
-
 h1, h2, h3, h4 {
     font-family: "Kannada mn", "Noto Serif Kannada", serif;
     font-weight: normal;
@@ -49,9 +48,7 @@ nav a.logo, footer a.logo {
 }
 
 /* hamburger menu */
-#hamburger{
-    display: none;
-}
+#hamburger{ display: none;}
 
 #hamburger:checked ~ .slidemenu {
     transform: translateX(0);
@@ -78,22 +75,15 @@ nav a.logo, footer a.logo {
     transition: all 0.3s;
 }
 
-.hamburger span:nth-child(1) {
-    top: 8px;
-}
+.hamburger span:nth-child(1) { top: 8px; }
 
-.hamburger span:nth-child(2) {
-    top: 16px;
-}
+.hamburger span:nth-child(2) { top: 16px; }
 
-#hamburger:checked ~ .hamburger span:nth-child(1) {
-    opacity: 0;
-}
+#hamburger:checked ~ .hamburger span:nth-child(1) { opacity: 0; }
 
 #hamburger:checked ~ .hamburger span:nth-child(2) {
     transform: rotate(45deg);
     top: 6px;
-
 }
 
 #hamburger:checked ~ .hamburger span:nth-child(3) {
@@ -102,7 +92,6 @@ nav a.logo, footer a.logo {
 }
 
 /* nav menu */
-
 .slidemenu {
     background-color: #fff;
     transform: translateX(100%);
@@ -132,9 +121,7 @@ nav a.logo, footer a.logo {
     padding-top: 2em;
 }
 
-.slidemenu a:hover {
-    color: var(--sunflowerYellow);
-}
+.slidemenu a:hover { color: var(--sunflowerYellow); }
 
 /* header */
 .hero, .ctaFooter, .quote, .login, .signup{
@@ -155,29 +142,19 @@ nav a.logo, footer a.logo {
     justify-content: center;
 }
 
-.heroHome{
-    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-homepage.jpg");
-}
+.heroHome{ background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-homepage.jpg"); }
 
-.heroAbout{
-    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-about.jpg");
-}
+.heroAbout{ background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-about.jpg"); }
 
-.heroFeatures{
-    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-features.jpg");
-}
+.heroFeatures{ background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-features.jpg");}
 
-.heroDownload{
-    background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-downlaod.jpg");
-}
+.heroDownload{ background-image: linear-gradient(rgba(45, 68, 43, 0.5), rgba(45, 68, 43, 0.5)), url("../images/hero-downlaod.jpg");}
 
 .hero h1, .hero p{ color: whitesmoke; }
 
 .ctaFooter, .quote, .login, .signup{ background-color: var(--sageGreen50); }
 
-.heroButtons .btnDark{ 
-    color: whitesmoke;
-}
+.heroButtons .btnDark{ color: whitesmoke; }
 
 .heroButtons .btnLight {
     color: whitesmoke;
@@ -192,19 +169,12 @@ nav a.logo, footer a.logo {
     width: 125px;
 }
 
-.homeAbout .btnDark { 
+.homeAbout .btnDark, .heroFeatures .btnLight { 
     width: 150px;
     padding: 1em;
 }
 
-.heroFeatures .btnLight { 
-    width: 150px;
-    padding: 1em;
-}
-
-.ctaButtons .btnLight, .ctaButtons .btnDark {
-    width: 200px;
-}
+.ctaButtons .btnLight, .ctaButtons .btnDark { width: 200px; }
 
 .btnLight {
     background-color: transparent;
@@ -217,9 +187,7 @@ nav a.logo, footer a.logo {
     color: whitesmoke;
 }
 
-.btnDark:hover{
-    background-color: var(--sunflowerYellow);
-}
+.btnDark:hover{ background-color: var(--sunflowerYellow);}
 
 .btnLight:hover{
     background-color: var(--sunflowerYellow);
@@ -239,12 +207,9 @@ header .heroButtons{
     gap: 8px;
 }
 
-header .heroButtons a{
-    text-decoration: none;
-}
+header .heroButtons a{ text-decoration: none; }
 
 /* sections */
-
 /* home */
 .homeAbout, .homeFeatures,
 .about, .features, .featureCard, .download, footer{
@@ -264,30 +229,20 @@ header .heroButtons a{
     align-items: center;
 }
 
-.homeAbout .content, .about .content, .about, .features .content{
-    gap: 32px;
-}
+.homeAbout .content, .about .content, .about, .features .content{ gap: 32px; }
 
-.homeAbout .content a{
-    display: inline-block;
-}
+.homeAbout .content a{ display: inline-block; }
 
 .homeAbout .mockup {
     padding-top: 1em;
     width: 80%;
 }
 
-.homeFeatures .content h3 {
-    margin-bottom: 8px;
-}
+.homeFeatures .content h3 { margin-bottom: 8px; }
 
-.homeFeatures .content h2{
-    margin-bottom: 32px;
-}
+.homeFeatures .content h2{ margin-bottom: 32px; }
 
-.homeFeatures{
-    gap: 1.5em;
-}
+.homeFeatures{ gap: 1.5em; }
 
 .homeFeatures .feature {
     display: flex;
@@ -335,9 +290,7 @@ article img {
     gap: 1em;
 }
 
-.ctaFooter{
-    padding-bottom: 2em;
-}
+.ctaFooter{ padding-bottom: 2em; }
 
 /* login - sign up */
 .login, .signup{
@@ -391,18 +344,14 @@ article img {
     text-align: center;
 }
 
-.formButtons p {
-    font-weight: bold;
-}
+.formButtons p { font-weight: bold; }
 
 .login p, .signup p {
     color: var(--forestGreen);
     text-align: center;
 }
 
-input::placeholder{
-    color: var(--sageGreen);
-}
+input::placeholder{ color: var(--sageGreen); }
 
 /* footer */
 .footer {
@@ -418,9 +367,7 @@ footer a {
   color: #000;
 }
 
-footer p {
-    margin-top: 8px;
-}
+footer p { margin-top: 8px; }
 
 footer .footerLinks, footer .socialButtons{
     display: flex;
@@ -442,23 +389,15 @@ footer .stroke {
     margin-top: 1em;
 }
 
-.fa-solid, .fa-regular {
-    color: var(--forestGreen);
-    
-}
+.fa-solid, .fa-regular { color: var(--forestGreen);}
 
-footer .footerLinks a:hover{
-    color: var(--sunflowerYellow);
-}
+footer .footerLinks a:hover{ color: var(--sunflowerYellow); }
 
-footer .socialButtons a:hover{
-    background-color: var(--sunflowerYellow);
-}
+footer .socialButtons a:hover{ background-color: var(--sunflowerYellow); }
 
+/* media querries */
 @media (min-width: 768px) {
-    nav{
-        padding: 1em 2em;
-    }
+    nav{ padding: 1em 2em;}
 
     .hamburger{
         right: 2em;
@@ -476,30 +415,20 @@ footer .socialButtons a:hover{
         margin-right: 2em;
     }
 
-    .hero, .ctaFooter, .quote, .login, .signup, footer{
-        margin: 1em 2em;
-    }
+    .hero, .ctaFooter, .quote, .login, .signup, footer{ margin: 1em 2em; }
 
-    .hero p{
-        max-width: 90%;
-    }
+    .hero p{ max-width: 90%; }
 
-    .homeFeatures p, p{
-        max-width: 80%;
-    }
+    .homeFeatures p, p{ max-width: 80%;}
     
-    .features .content p, footer p {
-        max-width: 100%;
-    }
+    .features .content p, footer p { max-width: 100%;}
 
     .login, .signup {
         margin-left: auto;
         margin-right: auto;
     }
 
-    .signup .column{
-        width: 100%;
-    }
+    .signup .column{ width: 100%;}
 
     .signup .row{
         display: flex;
@@ -507,10 +436,7 @@ footer .socialButtons a:hover{
         gap: 1em;
     }
 
-    .formButtons .btnDark{
-        width: 200px;
-    }
-
+    .formButtons .btnDark{ width: 200px;}
 }
 
 @media (min-width: 1200px) {
@@ -546,9 +472,7 @@ footer .socialButtons a:hover{
         margin: 0;
     }
 
-    #hamburger:checked ~ .slidemenu {
-        transform: none;
-    }
+    #hamburger:checked ~ .slidemenu { transform: none; }
 
     .slidemenu .navLinks, .slidemenu .navButtons {
         display: flex;
@@ -556,9 +480,7 @@ footer .socialButtons a:hover{
         padding-top: 0;
     }
 
-    .slidemenu .navLinks{
-        align-self: center;
-    }
+    .slidemenu .navLinks{ align-self: center;}
 
     .slidemenu .navLinks .active {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -570,18 +492,13 @@ footer .socialButtons a:hover{
         gap: 0.5em;
     }
 
-    .slidemenu .dontShow{
-        display: none;
-    }
+    .slidemenu .dontShow{ display: none; }
 
-    nav .navForms{
-        justify-content: flex-end;
-    }
+    nav .navForms{ justify-content: flex-end;}
 
     .slidemenu .navButtons .light, .slidemenu .navButtons .dark{
         border: 2px solid var(--forestGreen);  
         padding: 0.7em 1em;
-        /* padding: 0.8em 1em; */
         border-radius: 40px;
         text-align: center;
         width: 60px;
@@ -613,30 +530,22 @@ footer .socialButtons a:hover{
     }
 
     .hero, .ctaFooter, .quote, .login, .signup, footer,
-    .homeAbout, .about, .download{
-        margin: 3em 4em;
-    }
+    .homeAbout, .about, .download{ margin: 3em 4em;}
 
     .hero{  min-height: 325px; }
 
     p{ max-width: 95%; }
 
-    .homeAbout, .about{
-        flex-direction: row;
-    }
+    .homeAbout, .about{ flex-direction: row;}
 
-    .philosophy {
-        flex-direction: row-reverse;
-    }
+    .philosophy {flex-direction: row-reverse;}
 
     .download{
         flex-direction: row-reverse;
         text-align: left;
     }
 
-    .download .column{
-        width: 60%;
-    }
+    .download .column{width: 60%;}
 
     .homeAbout .content, .about .content{
         align-items: flex-start;
@@ -644,9 +553,7 @@ footer .socialButtons a:hover{
         text-align: left;
     }
 
-    .homeAbout .btnDark{
-        text-align: center;
-    }
+    .homeAbout .btnDark{text-align: center; }
 
     .homeAbout .mockup, .download .mockup{
         width: 70%;
