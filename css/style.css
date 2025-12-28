@@ -405,7 +405,11 @@ input::placeholder{
 }
 
 /* footer */
-footer{
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1em;
 }
 
@@ -418,10 +422,11 @@ footer p {
     margin-top: 8px;
 }
 
-footer .footerLinks, footer .socialButtons {
+footer .footerLinks, footer .socialButtons{
     display: flex;
     flex-direction: row;
     gap: 1em;
+    justify-content: center;
 }
 
 footer .socialButtons a {
@@ -612,13 +617,9 @@ footer .socialButtons a:hover{
         margin: 3em 4em;
     }
 
-    .hero{ 
-        min-height: 325px;
-    }
+    .hero{  min-height: 325px; }
 
-    p{
-        max-width: 95%;
-    }
+    p{ max-width: 95%; }
 
     .homeAbout, .about{
         flex-direction: row;
@@ -676,5 +677,12 @@ footer .socialButtons a:hover{
     .login, .signup {
         margin-left: auto;
         margin-right: auto;
+    }
+
+    .footer{
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+        margin-bottom: 1em;
     }
 }
