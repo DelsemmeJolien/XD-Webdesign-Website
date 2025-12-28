@@ -14,7 +14,7 @@
 - [X] Heb ik een **titel** en **meta-tags** in `<head>` (charset, viewport)?
 - [X] Zijn alle links in de **navigatie** correct en werken ze?
 - [X] Heb ik **alt-teksten** toegevoegd aan alle afbeeldingen?
-- [ ] Is mijn HTML **gevalideerd via [W3C Validator](https://validator.w3.org/aat alle styling in **style.css** (geen inline CSS)?
+- [X] Is mijn HTML **gevalideerd via [W3C Validator](https://validator.w3.org/aat alle styling in **style.css** (geen inline CSS)?
 - [X] Volg ik mijn **Figma-ontwerp** qua kleuren en typografie?
 - [X] Gebruik ik **Google Fonts** (indien nodig)?
 - [X] Heb ik **hover-effecten** op knoppen of menu-items?
