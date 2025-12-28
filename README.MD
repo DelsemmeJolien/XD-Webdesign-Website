@@ -16,7 +16,7 @@
 - [ ] Heb ik **alt-teksten** toegevoegd aan alle afbeeldingen?
 - [ ] Is mijn HTML **gevalideerd via [W3C Validator](https://validator.w3.org/aat alle styling in **style.css** (geen inline CSS)?
 - [X] Volg ik mijn **Figma-ontwerp** qua kleuren en typografie?
-- [ ] Gebruik ik **Google Fonts** (indien nodig)?
+- [X] Gebruik ik **Google Fonts** (indien nodig)?
 - [X] Heb ik **hover-effecten** op knoppen of menu-items?
 
 ---
@@ -38,7 +38,7 @@
 - [ ] Werkt alles in **Chrome, Firefox en Edge/Safari**?
 
 ## 7. Uploaden
-- [ ] Heb ik mijn bestanden geüpload naar **GitHub Pages**?
+- [X] Heb ik mijn bestanden geüpload naar **GitHub Pages**?
 - [ ] Heb ik de link naar mijn website gedeeld met mijn docent?
 - [ ] Heb ik mijn code geupload in ZIP?
 - [ ] Heb ik mijn publieke figma gedeeld met mijn docent?# XD-Webdesign-Website
